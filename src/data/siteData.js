@@ -141,24 +141,44 @@ export const siteData = {
       title: "Nos cuentas tu idea",
       text:
         "Escríbenos por WhatsApp y cuéntanos qué quieres personalizar, para quién es y qué estilo tienes en mente.",
+      media: {
+        type: "video",
+        src: cloudinaryAssets.process[0].src,
+        alt: "Video del paso 1 del proceso de pedido de Bohemia CB",
+      },
     },
     {
       step: "02",
       title: "Definimos el pedido",
       text:
         "Te orientamos con el diseño, el tipo de producto, el nivel de personalización y los detalles más importantes.",
+      media: {
+        type: "video",
+        src: cloudinaryAssets.process[1].src,
+        alt: "Video del paso 2 del proceso de pedido de Bohemia CB",
+      },
     },
     {
       step: "03",
       title: "Creamos tu pieza",
       text:
         "Desarrollamos tu pedido con atención, cuidado y una ejecución pensada para que el resultado se vea realmente especial.",
+      media: {
+        type: "video",
+        src: cloudinaryAssets.process[2].src,
+        alt: "Video del paso 3 del proceso de pedido de Bohemia CB",
+      },
     },
     {
       step: "04",
       title: "Coordinamos la entrega",
       text:
         "Acordamos la entrega o el envío según el tipo de pedido, la zona y el tiempo necesario para hacerlo bien.",
+      media: {
+        type: "video",
+        src: cloudinaryAssets.process[3].src,
+        alt: "Video del paso 4 del proceso de pedido de Bohemia CB",
+      },
     },
   ],
 

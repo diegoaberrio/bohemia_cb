@@ -528,6 +528,21 @@ function Home() {
 
               return (
                 <article className="process-card card-lift" key={item.step}>
+                  {item.media?.type === "video" && item.media?.src && (
+                    <div className="process-video-frame">
+                      <video
+                        className="process-video"
+                        src={item.media.src}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="metadata"
+                        aria-label={item.media.alt || item.title}
+                      />
+                    </div>
+                  )}
+
                   <div className="process-card-top">
                     <span className="process-step">{item.step}</span>
                     <div className="icon-wrap icon-wrap-soft" aria-hidden="true">

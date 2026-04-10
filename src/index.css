@@ -1704,3 +1704,45 @@ svg {
     will-change: auto;
   }
 }
+
+/* PROCESS VIDEOS */
+
+.process-video-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 1.15rem;
+  margin-bottom: 1rem;
+  background:
+    linear-gradient(180deg, rgba(142, 164, 146, 0.16), rgba(255, 255, 255, 0.6));
+  border: 1px solid rgba(80, 99, 86, 0.12);
+  box-shadow: 0 12px 26px rgba(36, 27, 21, 0.08);
+}
+
+.process-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  background: #e9e2d7;
+}
+
+.process-card:hover .process-video {
+  transform: scale(1.015);
+  transition: transform var(--motion-slow) var(--ease-premium);
+}
+
+@media (max-width: 699px) {
+  .process-video-frame {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .process-card:hover .process-video {
+    transform: none;
+    transition: none;
+  }
+}

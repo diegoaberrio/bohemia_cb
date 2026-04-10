@@ -4,6 +4,9 @@ const landingSlug = "bohemia-cb";
 const cld = (publicId) =>
   `https://res.cloudinary.com/${cloudName}/image/upload/q_auto,f_auto/${publicId}`;
 
+const cldVideo = (publicId) =>
+  `https://res.cloudinary.com/${cloudName}/video/upload/q_auto,f_auto/${publicId}.mp4`;
+
 export const cloudinaryAssets = {
   cloudName,
   landingSlug,
@@ -55,6 +58,25 @@ export const cloudinaryAssets = {
     {
       id: `${landingSlug}_trust_03`,
       src: cld(`${landingSlug}_trust_03`),
+    },
+  ],
+
+  process: [
+    {
+      id: `${landingSlug}_process_01`,
+      src: cldVideo(`${landingSlug}_process_01`),
+    },
+    {
+      id: `${landingSlug}_process_02`,
+      src: cldVideo(`${landingSlug}_process_02`),
+    },
+    {
+      id: `${landingSlug}_process_03`,
+      src: cldVideo(`${landingSlug}_process_03`),
+    },
+    {
+      id: `${landingSlug}_process_04`,
+      src: cldVideo(`${landingSlug}_process_04`),
     },
   ],
 
